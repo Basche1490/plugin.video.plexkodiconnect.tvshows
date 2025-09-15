@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # We need this in order to use add-on paths like
-# 'plugin://plugin.video.plexkodiconnect.MOVIES' in the Kodi video database
+# 'plugin://plugin.video.pkc.zidoo.MOVIES' in the Kodi video database
 ###############################################################################
 from __future__ import absolute_import, division, unicode_literals
 from logging import getLogger
@@ -13,7 +13,7 @@ import xbmcplugin
 import xbmcaddon
 
 # Import from the main pkc add-on
-__addon__ = xbmcaddon.Addon(id='plugin.video.plexkodiconnect')
+__addon__ = xbmcaddon.Addon(id='plugin.video.pkc.zidoo')
 __temp_path__ = os.path.join(__addon__.getAddonInfo('path').decode('utf-8'), 'resources', 'lib')
 __base__ = xbmc.translatePath(__temp_path__.encode('utf-8')).decode('utf-8')
 sys.path.append(__base__)
